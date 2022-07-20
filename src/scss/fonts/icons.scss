@@ -1,0 +1,41 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.icon-send:before {
+	content: "\e900";
+}
+
+.icon-linkedin:before {
+	content: "\e904";
+}
+
+.icon-arrow:before {
+	content: "\e905";
+}
+
+.icon-discord:before {
+	content: "\e906";
+}
+
+.icon-twitter:before {
+	content: "\e907";
+}
+
+.icon-youtube:before {
+	content: "\ea9d";
+}

@@ -1,0 +1,41 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: $blue;
+    color: #fff;
+    border-radius: rem(4);
+    transition: background-color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #638efa;
+        }
+    }
+}
+
+.btn-white {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    color: $blue;
+    border-radius: rem(4);
+    transition: background-color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #638efa;
+            color: #fff;
+        }
+    }
+}
+
+.title {
+    color: $black;
+    font-weight: 700;
+    line-height: math.div(44, 36);
+    @include adaptiveValue("font-size", 36, 18);
+}
