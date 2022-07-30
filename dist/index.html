@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220720132947">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220731013513">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -278,8 +278,8 @@
 				</div>
 				<div class="footer-right">
 					<h4 class="footer-right__title">Subscribe to our newsletter</h4>
-					<form class="footer-right-subscribe" action="#">
-						<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email Address" class="footer-right-subscribe__input">
+					<form data-popup-message="#form-message" data-dev class="footer-right-subscribe" action="#">
+						<input autocomplete="off" type="text" name="form[]" data-error="Error !" data-required="email" placeholder="Email Address" class="footer-right-subscribe__input">
 						<button type="submit" class="footer-right-subscribe__button btn icon-send"></button>
 					</form>
 					<p class="footer-right__text">We will send you updates on the latest news and features. No spam.</p>
@@ -293,7 +293,17 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220720132947"></script>
+	<div id="form-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					Thanks! We will send you updates on the latest news and features.
+				</div>
+				<button data-close type="button" class="popup__close btn">Close</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220731013513"></script>
 </body>
 
 </html>

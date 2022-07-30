@@ -59,3 +59,11 @@ body::after {
 		visibility: visible;
 	}
 }
+.popup__text {
+	color: $black;
+	@include adaptiveValue("font-size", 18, 14);
+	margin-bottom: rem(25);
+}
+.popup__close {
+	padding: rem(10) rem(15);
+}

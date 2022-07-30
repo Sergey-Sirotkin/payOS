@@ -39,3 +39,13 @@
     line-height: math.div(44, 36);
     @include adaptiveValue("font-size", 36, 18);
 }
+
+.form__error {
+position: absolute;
+right: 20%;
+top: 50%;
+transform: translateY(-50%);
+padding: rem(5);
+background-color: rgb(250, 104, 104);
+border-radius: rem(20);
+}
